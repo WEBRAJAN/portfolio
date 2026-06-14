@@ -763,7 +763,15 @@ function LoadingScreen({ done }) {
 
 export default function App() {
   const [loaded, setLoaded] = useState(false);
-  useEffect(() => { setTimeout(() => setLoaded(true), 2800); }, []);
+
+  useEffect(() => {
+    document.title = "Kritika Agarwal Portfolio";
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => setLoaded(true), 2800);
+  }, []);
+
   return (
     <div style={{ background: COLORS.bg, color: "#fff", fontFamily: "'Inter', -apple-system, BlinkMacSystemFont, sans-serif", minHeight: "100vh" }}>
       <LoadingScreen done={loaded} />

@@ -135,8 +135,8 @@ function Navbar() {
       transition: "all 0.3s",
     }}>
       <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: 1 }}>
-        <span style={{ background: `linear-gradient(135deg, ${COLORS.primary}, ${COLORS.secondary})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Elite</span>
-        <span style={{ color: "#fff" }}>Headshoter</span>
+        <span style={{ background: `linear-gradient(135deg, ${COLORS.primary}, ${COLORS.secondary})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Wel</span>
+        <span style={{ color: "#fff" }}>come</span>
       </div>
       <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
         {links.map(l => (
@@ -642,17 +642,42 @@ function Contact() {
           </div>
           <h3 style={{ color: "#fff", fontSize: 16, fontWeight: 700, marginBottom: 20 }}>Find me on</h3>
           <div style={{ display: "flex", gap: 14, flexWrap: "wrap" }}>
-            {socials.map(({ label, icon, color }) => (
-              <button key={label} style={{
-                display: "flex", alignItems: "center", gap: 8, padding: "10px 18px", borderRadius: 10,
-                background: "rgba(255,255,255,0.04)", border: `1px solid ${COLORS.border}`, cursor: "pointer",
-                color: COLORS.textSecondary, fontSize: 14, fontWeight: 600, transition: "all 0.25s",
-              }}
-                onMouseEnter={e => { e.currentTarget.style.borderColor = color + "66"; e.currentTarget.style.color = color; e.currentTarget.style.background = color + "11"; }}
-                onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.color = COLORS.textSecondary; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}>
-                <span>{icon}</span> {label}
-              </button>
-            ))}
+               {socials.map(({ label, icon, color, url }) => (
+  <a
+    key={label}
+    href={url}
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ textDecoration: "none" }}
+  >
+    <button
+      style={{
+        display: "flex",
+        alignItems: "center",
+        gap: 8,
+        padding: "10px 18px",
+        borderRadius: 10,
+        background: "rgba(255,255,255,0.04)",
+        border: `1px solid ${COLORS.border}`,
+        cursor: "pointer",
+        color: COLORS.textSecondary,
+        fontSize: 14,
+        fontWeight: 600,
+        transition: "all 0.25s",
+      }}
+      onMouseEnter={(e) => {
+        e.currentTarget.style.borderColor = color + "66";
+        e.currentTarget.style.color = color;
+      }}
+      onMouseLeave={(e) => {
+        e.currentTarget.style.borderColor = COLORS.border;
+        e.currentTarget.style.color = COLORS.textSecondary;
+      }}
+    >
+      <span>{icon}</span> {label}
+    </button>
+  </a>
+))}
           </div>
         </div>
       </div>
@@ -671,7 +696,7 @@ function Footer() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ fontWeight: 900, fontSize: 22, marginBottom: 14 }}>
-              <GradientText>Elite</GradientText><span style={{ color: "#fff" }}>Headshoter</span>
+              <GradientText>Kritika</GradientText><span style={{ color: "#fff" }}>Agarwal</span>
             </div>
             <p style={{ color: COLORS.textMuted, fontSize: 14, lineHeight: 1.7, maxWidth: 240 }}>
               Engineering student turning ideas into elegant digital solutions.
@@ -724,7 +749,7 @@ function LoadingScreen({ done }) {
       opacity: done ? 0 : 1, transition: "opacity 0.5s 0.3s", pointerEvents: done ? "none" : "all",
     }}>
       <div style={{ fontWeight: 900, fontSize: 36, marginBottom: 40 }}>
-        <GradientText>Elite</GradientText><span style={{ color: "#fff" }}>Headshoter</span>
+        <GradientText>Kritika</GradientText><span style={{ color: "#fff" }}>Agarwal</span>
       </div>
       <div style={{ width: 200, height: 3, background: "rgba(255,255,255,0.08)", borderRadius: 100, overflow: "hidden" }}>
         <div style={{ height: "100%", width: `${progress}%`, background: `linear-gradient(90deg, ${COLORS.primary}, ${COLORS.secondary})`, transition: "width 0.1s" }} />

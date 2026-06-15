@@ -135,8 +135,8 @@ function Navbar() {
       transition: "all 0.3s",
     }}>
       <div style={{ fontWeight: 800, fontSize: 20, letterSpacing: 1 }}>
-        <span style={{ background: `linear-gradient(135deg, ${COLORS.primary}, ${COLORS.secondary})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Wel</span>
-        <span style={{ color: "#fff" }}>come</span>
+        <span style={{ background: `linear-gradient(135deg, ${COLORS.primary}, ${COLORS.secondary})`, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" }}>Kritika </span>
+        <span style={{ color: "#fff" }}>Agarwal</span>
       </div>
       <div style={{ display: "flex", gap: "2rem", alignItems: "center" }}>
         {links.map(l => (
@@ -189,7 +189,7 @@ function Hero() {
             Kriti
           </h1>
           <div style={{ fontSize: "clamp(1.2rem, 3vw, 1.8rem)", fontWeight: 700, marginBottom: 20 }}>
-            <GradientText>Kritika Agarwal</GradientText>
+            <GradientText>Kritika Agarwal </GradientText>
           </div>
           <p style={{ fontSize: "clamp(0.95rem, 2vw, 1.1rem)", color: COLORS.textSecondary, lineHeight: 1.7, maxWidth: 540, marginBottom: 40 }}>
             Electrical Engineering Student · Developer · Hacker · Automation Enthusiast
@@ -696,7 +696,7 @@ function Footer() {
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: 40, marginBottom: 48 }}>
           <div>
             <div style={{ fontWeight: 900, fontSize: 22, marginBottom: 14 }}>
-              <GradientText>Kritika</GradientText><span style={{ color: "#fff" }}>Agarwal</span>
+              <GradientText>Kritika</GradientText><span style={{ color: "#fff" }}>Agarwal </span>
             </div>
             <p style={{ color: COLORS.textMuted, fontSize: 14, lineHeight: 1.7, maxWidth: 240 }}>
               Engineering student turning ideas into elegant digital solutions.
@@ -722,7 +722,7 @@ function Footer() {
           </div>
         </div>
         <div style={{ borderTop: `1px solid ${COLORS.border}`, paddingTop: 28, display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap", gap: 16 }}>
-          <p style={{ color: COLORS.textMuted, fontSize: 13 }}>© 2024 Kritika Agarwal · All rights reserved.</p>
+          <p style={{ color: COLORS.textMuted, fontSize: 13 }}>© 2024 Kritika  Agarwal · All rights reserved.</p>
           <button onClick={scrollTop} style={{ width: 42, height: 42, borderRadius: 10, border: `1px solid ${COLORS.border}`, background: "rgba(255,255,255,0.04)", cursor: "pointer", color: COLORS.primary, fontSize: 18, transition: "all 0.2s", display: "flex", alignItems: "center", justifyContent: "center" }}
             onMouseEnter={e => { e.currentTarget.style.borderColor = COLORS.primary + "55"; e.currentTarget.style.background = COLORS.primary + "15"; }}
             onMouseLeave={e => { e.currentTarget.style.borderColor = COLORS.border; e.currentTarget.style.background = "rgba(255,255,255,0.04)"; }}>
@@ -749,7 +749,7 @@ function LoadingScreen({ done }) {
       opacity: done ? 0 : 1, transition: "opacity 0.5s 0.3s", pointerEvents: done ? "none" : "all",
     }}>
       <div style={{ fontWeight: 900, fontSize: 36, marginBottom: 40 }}>
-        <GradientText>Kritika</GradientText><span style={{ color: "#fff" }}>Agarwal</span>
+        <GradientText>Kritika </GradientText><span style={{ color: "#fff" }}>Agarwal</span>
       </div>
       <div style={{ width: 200, height: 3, background: "rgba(255,255,255,0.08)", borderRadius: 100, overflow: "hidden" }}>
         <div style={{ height: "100%", width: `${progress}%`, background: `linear-gradient(90deg, ${COLORS.primary}, ${COLORS.secondary})`, transition: "width 0.1s" }} />
